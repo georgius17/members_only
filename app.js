@@ -14,9 +14,7 @@ const User = require('./models/user');
 var mongoose = require('mongoose');
 require('dotenv').config();
 
-const mongoDB = process.env.APP_SECRET;
-
-// const mongoDB = 'mongodb+srv://skielnet:sekvojovec1@cluster0.8twmn.azure.mongodb.net/auth_odin?retryWrites=true&w=majority';
+const mongoDB = process.env.APP_SECRET
 
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 const db = mongoose.connection;
